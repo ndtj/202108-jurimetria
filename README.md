@@ -25,6 +25,7 @@ Fluxo da Jurimetria.
 |:-----|:-------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
 | 00   | [00-sobre.html](https://ndtj.github.io/main-jurimetria/slides/00-sobre.html)                                 | [00-sobre.pdf](https://ndtj.github.io/main-jurimetria/slides/00-sobre.pdf)                                 |
 | 01   | [01-introducao-jurimetria.html](https://ndtj.github.io/main-jurimetria/slides/01-introducao-jurimetria.html) | [01-introducao-jurimetria.pdf](https://ndtj.github.io/main-jurimetria/slides/01-introducao-jurimetria.pdf) |
+| 02   | [02-camaras.html](https://ndtj.github.io/main-jurimetria/slides/02-camaras.html)                             | [02-camaras.pdf](https://ndtj.github.io/main-jurimetria/slides/02-camaras.pdf)                             |
 
 ## Material extra
 

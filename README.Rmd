@@ -15,7 +15,7 @@ library(magrittr)
 
 main_repo <- "main-jurimetria"
 turma <- "202108-jurimetria"
-num_aula <- 1
+num_aula <- 4
 ```
 
 ```{r ws, fig.cap="Fluxo da Jurimetria.", out.width="70%", echo=FALSE, dpi = 300, fig.align="center"}
@@ -51,7 +51,7 @@ list_github_files <- function (repo, dir = NULL, pattern = NULL) {
 
 paths <- list_github_files(main_repo, "slides/", "[0-9]-.*html$")
 
-tibble::tibble(
+todos_scripts <- tibble::tibble(
   slide = paths,
   link = paste0("https://ndtj.github.io/", main_repo, "/", slide),
   pdf = stringr::str_replace(paste0("https://ndtj.github.io/", main_repo, "/", slide), "html$", "pdf")
@@ -64,9 +64,23 @@ tibble::tibble(
   dplyr::transmute(
     aula = stringr::str_extract(slide, "[0-9]+"),
     link, pdf
-  ) %>% 
+  )
+
+aulas <- todos_scripts %>% 
+  dplyr::filter(aula != "00")
+aulas %>% 
   knitr::kable(col.names = c("Aula", "HTML", "PDF"))
 ```
+
+## Instruções
+
+```{r}
+todos_scripts %>% 
+  dplyr::filter(aula == "00") %>% 
+  dplyr::select(-aula) %>% 
+  knitr::kable(col.names = c("HTML", "PDF"))
+```
+
 
 ## Material extra
 

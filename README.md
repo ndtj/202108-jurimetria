@@ -23,10 +23,17 @@ Fluxo da Jurimetria.
 
 | Aula | HTML                                                                                                         | PDF                                                                                                        |
 |:-----|:-------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| 00   | [00-sobre.html](https://ndtj.github.io/main-jurimetria/slides/00-sobre.html)                                 | [00-sobre.pdf](https://ndtj.github.io/main-jurimetria/slides/00-sobre.pdf)                                 |
 | 01   | [01-introducao-jurimetria.html](https://ndtj.github.io/main-jurimetria/slides/01-introducao-jurimetria.html) | [01-introducao-jurimetria.pdf](https://ndtj.github.io/main-jurimetria/slides/01-introducao-jurimetria.pdf) |
 | 02   | [02-camaras.html](https://ndtj.github.io/main-jurimetria/slides/02-camaras.html)                             | [02-camaras.pdf](https://ndtj.github.io/main-jurimetria/slides/02-camaras.pdf)                             |
 | 03   | [03-carf.html](https://ndtj.github.io/main-jurimetria/slides/03-carf.html)                                   | [03-carf.pdf](https://ndtj.github.io/main-jurimetria/slides/03-carf.pdf)                                   |
+| 04   | [04-pnud-db.html](https://ndtj.github.io/main-jurimetria/slides/04-pnud-db.html)                             | [04-pnud-db.pdf](https://ndtj.github.io/main-jurimetria/slides/04-pnud-db.pdf)                             |
+
+## Instruções
+
+| HTML                                                                                           | PDF                                                                                          |
+|:-----------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------|
+| [00-sobre.html](https://ndtj.github.io/main-jurimetria/slides/00-sobre.html)                   | [00-sobre.pdf](https://ndtj.github.io/main-jurimetria/slides/00-sobre.pdf)                   |
+| [00-trabalho-final.html](https://ndtj.github.io/main-jurimetria/slides/00-trabalho-final.html) | [00-trabalho-final.pdf](https://ndtj.github.io/main-jurimetria/slides/00-trabalho-final.pdf) |
 
 ## Material extra
 
@@ -41,3 +48,5 @@ Referências extras comentadas nas aulas.
 |    0 | Sobre R    | [Livro sobre R](https://livro.curso-r.com)                                                                                                   |
 |    1 | Leitura    | [Livro sobre séries temporais financeiras](https://www.amazon.com.br/Econometria-Financeira-S%C3%A9ries-Temporais-Financeiras/dp/8521211309) |
 |    1 | Leitura    | [Apresentação FGV sobre variabilidade de decisões](https://abjur.github.io/slides/fgv/#1)                                                    |
+|    2 | Leitura    | [Sheriff of Nottingham Hypothesis (artigo)](http://repositorio.unifesp.br/handle/11600/38866)                                                |
+|    2 | Sobre R    | [Gráficos de pizza no R](https://www.r-graph-gallery.com/piechart-ggplot2.html)                                                              |

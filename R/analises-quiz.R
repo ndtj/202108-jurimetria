@@ -53,6 +53,16 @@ carf |>
   highcharter::hc_xAxis(labels = list(style = list(fontSize = "15px"))) |>
   highcharter::hc_yAxis(labels = list(style = list(fontSize = "15px")))
 
+
+x <- rnorm(10000, mean = 10, sd=2)
+hist(x)
+median(x)
+x <- rexp(10000)
+hist(x)
+mean(x)
+median(x)
+
+
 carf |>
   dplyr::count(mediana, sort = TRUE) |>
   bidTrib:::barras() |>
@@ -72,3 +82,31 @@ carf |>
     lab = scales::percent(prop)
   ) |>
   bidTrib:::pizza()
+
+# aula 03: db -----------------------------------------------------------
+
+db <- readxl::read_excel("~/Documents/puc/202108-jurimetria/data-raw/Doing Business.xlsx") |>
+  dplyr::select(where(~!is.logical(.x))) |>
+  janitor::clean_names() |>
+  purrr::set_names(
+    c("id", "start_time", "completion_time", "email",
+      "name", "indicador", "cifra", "sobrevivencia", "prospectivo")
+  )
+
+db |>
+  dplyr::count(indicador, sort = TRUE) |>
+  bidTrib:::barras() |>
+  highcharter::hc_xAxis(labels = list(style = list(fontSize = "15px"))) |>
+  highcharter::hc_yAxis(labels = list(style = list(fontSize = "15px")))
+
+db |>
+  dplyr::count(cifra, sort = TRUE) |>
+  bidTrib:::barras() |>
+  highcharter::hc_xAxis(labels = list(style = list(fontSize = "15px"))) |>
+  highcharter::hc_yAxis(labels = list(style = list(fontSize = "15px")))
+
+db |>
+  dplyr::count(sobrevivencia, sort = TRUE) |>
+  bidTrib:::barras() |>
+  highcharter::hc_xAxis(labels = list(style = list(fontSize = "15px"))) |>
+  highcharter::hc_yAxis(labels = list(style = list(fontSize = "15px")))

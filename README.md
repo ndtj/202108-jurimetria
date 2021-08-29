@@ -27,6 +27,7 @@ Fluxo da Jurimetria.
 | 02   | [02-camaras.html](https://ndtj.github.io/main-jurimetria/slides/02-camaras.html)                             | [02-camaras.pdf](https://ndtj.github.io/main-jurimetria/slides/02-camaras.pdf)                             |
 | 03   | [03-carf.html](https://ndtj.github.io/main-jurimetria/slides/03-carf.html)                                   | [03-carf.pdf](https://ndtj.github.io/main-jurimetria/slides/03-carf.pdf)                                   |
 | 04   | [04-pnud-db.html](https://ndtj.github.io/main-jurimetria/slides/04-pnud-db.html)                             | [04-pnud-db.pdf](https://ndtj.github.io/main-jurimetria/slides/04-pnud-db.pdf)                             |
+| 05   | [05-predicao.html](https://ndtj.github.io/main-jurimetria/slides/05-predicao.html)                           | [05-predicao.pdf](https://ndtj.github.io/main-jurimetria/slides/05-predicao.pdf)                           |
 
 ## Instruções
 

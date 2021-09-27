@@ -15,7 +15,7 @@ library(magrittr)
 
 main_repo <- "main-jurimetria"
 turma <- "202108-jurimetria"
-num_aula <- 4
+num_aula <- 6
 ```
 
 ```{r ws, fig.cap="Fluxo da Jurimetria.", out.width="70%", echo=FALSE, dpi = 300, fig.align="center"}

@@ -28,6 +28,9 @@ Fluxo da Jurimetria.
 | 03   | [03-carf.html](https://ndtj.github.io/main-jurimetria/slides/03-carf.html)                                   | [03-carf.pdf](https://ndtj.github.io/main-jurimetria/slides/03-carf.pdf)                                   |
 | 04   | [04-pnud-db.html](https://ndtj.github.io/main-jurimetria/slides/04-pnud-db.html)                             | [04-pnud-db.pdf](https://ndtj.github.io/main-jurimetria/slides/04-pnud-db.pdf)                             |
 | 05   | [05-predicao.html](https://ndtj.github.io/main-jurimetria/slides/05-predicao.html)                           | [05-predicao.pdf](https://ndtj.github.io/main-jurimetria/slides/05-predicao.pdf)                           |
+| 06   | [06-adocao.html](https://ndtj.github.io/main-jurimetria/slides/06-adocao.html)                               | [06-adocao.pdf](https://ndtj.github.io/main-jurimetria/slides/06-adocao.pdf)                               |
+| 07   | [07-especializacao.html](https://ndtj.github.io/main-jurimetria/slides/07-especializacao.html)               | [07-especializacao.pdf](https://ndtj.github.io/main-jurimetria/slides/07-especializacao.pdf)               |
+| 08   | [08-observatorios.html](https://ndtj.github.io/main-jurimetria/slides/08-observatorios.html)                 | [08-observatorios.pdf](https://ndtj.github.io/main-jurimetria/slides/08-observatorios.pdf)                 |
 
 ## Instruções
 

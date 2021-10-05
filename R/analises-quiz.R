@@ -83,7 +83,7 @@ carf |>
   ) |>
   bidTrib:::pizza()
 
-# aula 03: db -----------------------------------------------------------
+# aula 04: db -----------------------------------------------------------
 
 db <- readxl::read_excel("~/Documents/puc/202108-jurimetria/data-raw/Doing Business.xlsx") |>
   dplyr::select(where(~!is.logical(.x))) |>
@@ -110,3 +110,66 @@ db |>
   bidTrib:::barras() |>
   highcharter::hc_xAxis(labels = list(style = list(fontSize = "15px"))) |>
   highcharter::hc_yAxis(labels = list(style = list(fontSize = "15px")))
+
+
+# aula 5 - Preditivos -----------------------------------------------------
+
+mp <- readxl::read_excel("~/Documents/puc/202108-jurimetria/data-raw/Modelos Preditivos.xlsx") |>
+  dplyr::select(where(~!is.logical(.x))) |>
+  janitor::clean_names() |>
+  purrr::set_names(
+    c("id", "start_time", "completion_time", "email",
+      "name", "aprendizado", "treino_teste", "metricas", "visualizacao")
+  )
+
+mp |>
+  dplyr::count(aprendizado, sort = TRUE) |>
+  bidTrib:::barras() |>
+  highcharter::hc_xAxis(labels = list(style = list(fontSize = "15px"))) |>
+  highcharter::hc_yAxis(labels = list(style = list(fontSize = "15px")))
+
+mp |>
+  dplyr::count(treino_teste, sort = TRUE) |>
+  bidTrib:::barras() |>
+  highcharter::hc_xAxis(labels = list(style = list(fontSize = "15px"))) |>
+  highcharter::hc_yAxis(labels = list(style = list(fontSize = "15px")))
+
+mp |>
+  dplyr::count(metricas, sort = TRUE) |>
+  bidTrib:::barras() |>
+  highcharter::hc_xAxis(labels = list(style = list(fontSize = "15px"))) |>
+  highcharter::hc_yAxis(labels = list(style = list(fontSize = "15px")))
+
+sample(mp$visualizacao, 1)
+
+# aula 8 - Observatórios -----------------------------------------------------
+
+obs <- readxl::read_excel("~/Documents/puc/202108-jurimetria/data-raw/Observatórios(1-24).xlsx") |>
+  dplyr::select(where(~!is.logical(.x))) |>
+  janitor::clean_names() |>
+  purrr::set_names(
+    c("id", "start_time", "completion_time", "email", "name",
+      "por_que", "quais_situacoes", "explique")
+  )
+
+obs |>
+  dplyr::count(por_que, sort = TRUE) |>
+  bidTrib:::barras() |>
+  highcharter::hc_xAxis(labels = list(style = list(fontSize = "15px"))) |>
+  highcharter::hc_yAxis(labels = list(style = list(fontSize = "15px")))
+
+obs |>
+  dplyr::mutate(quais_situacoes = stringr::str_squish(quais_situacoes)) |>
+  dplyr::mutate(quais_situacoes = stringr::str_split(quais_situacoes, ";")) |>
+  tidyr::unnest(quais_situacoes) |>
+  dplyr::count(quais_situacoes, sort = TRUE)
+
+obs |>
+  dplyr::mutate(quais_situacoes = stringr::str_squish(quais_situacoes)) |>
+  dplyr::count(quais_situacoes, sort = TRUE) |>
+  bidTrib:::barras() |>
+  highcharter::hc_xAxis(labels = list(style = list(fontSize = "15px"))) |>
+  highcharter::hc_yAxis(labels = list(style = list(fontSize = "15px")))
+
+
+sample(obs$explique, 1)

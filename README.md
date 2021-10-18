@@ -32,6 +32,7 @@ Fluxo da Jurimetria.
 | 07   | [07-especializacao.html](https://ndtj.github.io/main-jurimetria/slides/07-especializacao.html)                 | [07-especializacao.pdf](https://ndtj.github.io/main-jurimetria/slides/07-especializacao.pdf)                 |
 | 08   | [08-observatorios.html](https://ndtj.github.io/main-jurimetria/slides/08-observatorios.html)                   | [08-observatorios.pdf](https://ndtj.github.io/main-jurimetria/slides/08-observatorios.pdf)                   |
 | 09   | [09-provisionamento-acordo.html](https://ndtj.github.io/main-jurimetria/slides/09-provisionamento-acordo.html) | [09-provisionamento-acordo.pdf](https://ndtj.github.io/main-jurimetria/slides/09-provisionamento-acordo.pdf) |
+| 10   | [10-especializacao.html](https://ndtj.github.io/main-jurimetria/slides/10-especializacao.html)                 | [10-especializacao.pdf](https://ndtj.github.io/main-jurimetria/slides/10-especializacao.pdf)                 |
 
 ## Instruções
 

@@ -152,6 +152,10 @@ obs <- readxl::read_excel("~/Documents/puc/202108-jurimetria/data-raw/Observató
       "por_que", "quais_situacoes", "explique")
   )
 
+readxl::read_excel("~/Documents/puc/202108-jurimetria/data-raw/Observatórios(1-24).xlsx") |>
+  dplyr::select(where(~!is.logical(.x))) |>
+  names()
+
 obs |>
   dplyr::count(por_que, sort = TRUE) |>
   bidTrib:::barras() |>
@@ -173,3 +177,30 @@ obs |>
 
 
 sample(obs$explique, 1)
+
+# aula 9 - Provisionamento -----------------------------------------------------
+
+prov <- readxl::read_excel("~/Documents/puc/202108-jurimetria/data-raw/Provisionamento e acordos.xlsx") |>
+  dplyr::select(where(~!is.logical(.x))) |>
+  janitor::clean_names() |>
+  purrr::set_names(
+    c("id", "start_time", "completion_time", "email", "name",
+      "o_que", "possiveis_problemas", "importancia_prov", "importancia_acordo")
+  )
+
+prov |>
+  dplyr::count(o_que, sort = TRUE) |>
+  bidTrib:::barras() |>
+  highcharter::hc_xAxis(labels = list(style = list(fontSize = "15px"))) |>
+  highcharter::hc_yAxis(labels = list(style = list(fontSize = "15px")))
+
+prov |>
+  dplyr::count(possiveis_problemas, sort = TRUE) |>
+  bidTrib:::barras() |>
+  highcharter::hc_xAxis(labels = list(style = list(fontSize = "15px"))) |>
+  highcharter::hc_yAxis(labels = list(style = list(fontSize = "15px")))
+
+prov$importancia_prov
+prov$importancia_acordo
+
+sample(prov$importancia_prov, 1)

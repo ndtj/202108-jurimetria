@@ -33,6 +33,7 @@ Fluxo da Jurimetria.
 | 08   | [08-observatorios.html](https://ndtj.github.io/main-jurimetria/slides/08-observatorios.html)                   | [08-observatorios.pdf](https://ndtj.github.io/main-jurimetria/slides/08-observatorios.pdf)                   |
 | 09   | [09-provisionamento-acordo.html](https://ndtj.github.io/main-jurimetria/slides/09-provisionamento-acordo.html) | [09-provisionamento-acordo.pdf](https://ndtj.github.io/main-jurimetria/slides/09-provisionamento-acordo.pdf) |
 | 10   | [10-especializacao.html](https://ndtj.github.io/main-jurimetria/slides/10-especializacao.html)                 | [10-especializacao.pdf](https://ndtj.github.io/main-jurimetria/slides/10-especializacao.pdf)                 |
+| 11   | [11-mci-analise.html](https://ndtj.github.io/main-jurimetria/slides/11-mci-analise.html)                       | [11-mci-analise.pdf](https://ndtj.github.io/main-jurimetria/slides/11-mci-analise.pdf)                       |
 
 ## Instruções
 
